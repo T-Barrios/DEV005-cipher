@@ -1,0 +1,58 @@
+html, body {
+    background-color: #ffffbe;
+}
+
+
+h1 {
+    margin: 0 auto;
+    width: fit-content;
+    color: black;
+    background-color: aquamarine;
+    border: 2px solid rgb(2, 141, 134);
+    border-radius: 3px;
+    padding: 10px 60px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+input{
+    color: black;
+    font-family: lucida console;
+    background-color: rgb(194, 255, 235);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px 80px;
+}
+
+button{
+    color: rgb(248, 107, 131);
+    font-size: 120%;
+    font-family: Impact;
+    background-color: aquamarine;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#parteUno,#parteDos{
+    text-align: center;
+}

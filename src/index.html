@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <div id="root">
+    <h1>Cifrado Ceasar</h1><br>
+  </div>
+
+  <div id="parteUno">
+    <h2>Cifrar mensaje</h2>
+    <input id="inputNormal" placeholder="Mensaje a cifrar" type="text">
+    <h3>Ingresa el número de desplazamiento para el cifrado</h3>
+    <input id="numeroCifrar" placeholder="Número de desplazamiento" type="number"><br><br>
+    <button id="goCifrar">CIFRAR</button>
+    <p id="textoCifrado"> </p>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="parteDos">
+    <h2>Descifrar mensaje</h2>
+    <input id="inputCifrado" placeholder="Mensaje a descifrar">
+    <h3>Ingresa el número de desplazamiento para descifrar</h3>
+    <input id="numeroDescifrar" placeholder="Número de desplazamiento" type="number"><br><br>
+    <button id="goDescifrar">DESCIFRAR</button>
+    <p id="textoDescifrado"> </p>
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
