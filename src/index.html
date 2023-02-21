@@ -10,29 +10,34 @@
 
 <body>
   <div id="root">
-    <h1>Cifrado Ceasar</h1><br>
+    <h1>Cifrado Ceasar</h1>
   </div>
 
   <div id="parteUno">
     <h2>Cifrar mensaje</h2>
     <input id="inputNormal" placeholder="Mensaje a cifrar" type="text">
     <h3>Ingresa el número de desplazamiento para el cifrado</h3>
-    <input id="numeroCifrar" placeholder="Número de desplazamiento" type="number"><br><br>
+    <input id="numeroCifrar" placeholder="Nº de desplazamiento"><br>
     <button id="goCifrar">CIFRAR</button>
-    <p id="textoCifrado"> </p>
   </div>
-
-  <br>
-  <br>
+  <div id="cipherScreen">
+    <h2>Tu mensaje cifrado es:</h2>
+    <p id="textoCifrado"></p>
+    <a href="index.html"><button id="homepage">Volver</button></a>
+  </div>  
 
   <div id="parteDos">
     <h2>Descifrar mensaje</h2>
     <input id="inputCifrado" placeholder="Mensaje a descifrar">
     <h3>Ingresa el número de desplazamiento para descifrar</h3>
-    <input id="numeroDescifrar" placeholder="Número de desplazamiento" type="number"><br><br>
+    <input id="numeroDescifrar" placeholder="Nº de desplazamiento"><br>
     <button id="goDescifrar">DESCIFRAR</button>
-    <p id="textoDescifrado"> </p>
   </div>
+  <div id="decipherScreen">
+    <h2>Tu mensaje descifrado es:</h2>
+    <p id="textoDescifrado"></p>
+    <a href="index.html"><button id="homepage2">Volver</button></a>
+  </div> 
 
   <script src="index.js" type="module"></script>
 </body>
