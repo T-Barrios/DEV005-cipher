@@ -46,14 +46,14 @@ input{
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 20px;
-    width: 15%;
+    width: 30%;
     text-align: center;
     color: black;
     font-family: lucida console;
     background-color: rgb(194, 255, 235);
     border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
-    padding: 10px 80px;
+    padding: 10px 20px;
 }
 
 button{
