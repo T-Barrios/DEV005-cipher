@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CAESAR'S SECRET</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+  <div id="root">
+    <h1>CAESAR'S SECRET</h1>
+  </div>
+
+  <div id="parteUno">
+    <h2>Cifrar mensaje</h2>
+    <input id="inputNormal" placeholder="Mensaje a cifrar">
+    <h3>Ingresa el número de desplazamiento para el cifrado</h3>
+    <input id="numeroCifrar" placeholder="Nº de desplazamiento"><br>
+    <button id="goCifrar">CIFRAR</button>
+  </div>
+  <div id="cipherScreen">
+    <h2>Tu mensaje cifrado es:</h2>
+    <p id="textoCifrado"></p>
+    <a href="index.html"><button id="homepage">Volver</button></a>
+  </div>  
+
+  <div id="parteDos">
+    <h2>Descifrar mensaje</h2>
+    <input id="inputCifrado" placeholder="Mensaje a descifrar">
+    <h3>Ingresa el número de desplazamiento para descifrar</h3>
+    <input id="numeroDescifrar" placeholder="Nº de desplazamiento"><br>
+    <button id="goDescifrar">DESCIFRAR</button>
+  </div>
+  <div id="decipherScreen">
+    <h2>Tu mensaje descifrado es:</h2>
+    <p id="textoDescifrado"></p>
+    <a href="index.html"><button id="homepage2">Volver</button></a>
+  </div> 
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
