@@ -19,37 +19,15 @@ buttonGoDecipher.addEventListener("click",mostrarDecipherScreen)
 function cifrar(){
   texto = document.getElementById("inputNormal").value
   numero = document.getElementById("numeroCifrar").value
-  const letterArray = []
-  const numberArray = []
-  const asciiArray = []
-  let numberToLetter = 0
-  let mensajeCifrado = ""
-  for (let i = 0; i < texto.length; i++){
-    letterArray.push(texto.slice(i,1+i))
-    numberArray.push(letterArray[i].charCodeAt(0))
-    asciiArray.push(cipher.encode((+numero),numberArray[i]))
-    numberToLetter = String.fromCharCode(asciiArray[i])
-    mensajeCifrado += numberToLetter
-  }  
+  const mensajeCifrado = cipher.encode(numero,texto)
   return document.getElementById("textoCifrado").innerHTML = mensajeCifrado
 }
 
 //FUNCIÓN DECIFRAR MENSAJE
 function descifrar(){
   xtexto = document.getElementById("inputCifrado").value
-  xnumero = document.getElementById("numeroDescifrar").value
-  const xletterArray = []
-  const xnumberArray = []
-  const xasciiArray = []
-  let xnumberToLetter = 0
-  let xmensajeDescifrado = ""
-  for (let i = 0; i < xtexto.length; i++){
-    xletterArray.push(xtexto.slice(i,1+i))
-    xnumberArray.push(xletterArray[i].charCodeAt(0))
-    xasciiArray.push(cipher.decode((+(xnumero)),xnumberArray[i]))
-    xnumberToLetter = String.fromCharCode(xasciiArray[i])
-    xmensajeDescifrado += xnumberToLetter
-  }
+  xnumero = parseInt(document.getElementById("numeroDescifrar").value)
+  const xmensajeDescifrado = cipher.decode(xnumero,xtexto)
   return document.getElementById("textoDescifrado").innerHTML = xmensajeDescifrado
 }
 
